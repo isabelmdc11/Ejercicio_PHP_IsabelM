@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+
+    <title>Practica de Formulario Php</title>
+</head>
+
+<body>
+    <div class="login-box">
+
+        <h1>Insertar Datos</h1>
+
+        <form method="POST" action="comprobar_formulario.php">
+          
+            <div class="user-box">
+
+                <input type="text" name="nombre" onkeyup="ComprobarNombre()" id="nombre" class="inputNombre" required />
+                <label for="nombre">Nombre: </label>
+            </div>
+            <div class="user-box">
+
+                <input type="text" name="apellido" id="apellidos" onkeyup="ComprobarApellidos()" class="inputApellidos"
+                    required />
+                <label for="apellido">Apellido: </label>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" id="email" onkeyup="ComprobarinputEmail()" class="inputEmail"
+                    required />
+                <label for="email">Correo electonico: </label>
+            </div>
+
+            <button type="submit" name="submit" id="botonEnviar"> <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Enviar</button>
+        </form>
+    </div>
+    <script src="./formulario.js"></script>
+</body>
+
+</html>
